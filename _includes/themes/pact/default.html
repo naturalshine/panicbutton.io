@@ -44,10 +44,15 @@
   <script type="text/javascript" src="{{ site.JB.BASE_PATH }}/js/jquery/jquery-ui-1.8.17.custom.min.js"></script>
   <script type="text/javascript" src="{{ site.JB.BASE_PATH }}/dist/jspdf.debug.js"></script>
   <script type="text/javascript" src="{{ site.JB.BASE_PATH }}/js/basic.js"></script>
+
+  <!-- transifex translation -->
+  <script type="text/javascript">window.liveSettings={api_key:"9107a503fa29445796694c37873d1b99"}</script>
+  <script type="text/javascript" src="//cdn.transifex.com/live.js"></script>
+  
   </head>
 
   {% capture body_class %}{% if page.body_class %}{{ page.body_class }}{% endif %}{% endcapture %}
-  <body class="{{ body_class }}">
+  <body class="{{ body_class }} txlive">
     <div id="wrap">
       <nav class="navbar navbar-default" role="navigation">
         <!-- Brand and toggle get grouped for better mobile display -->
